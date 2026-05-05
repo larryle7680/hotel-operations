@@ -2,14 +2,14 @@ package com.pluralsight;
 
 public class Room {
     //Attributes
-    private int numbersOfBeds;
+    private int numberOfBeds;
     private double price;
     private boolean isOccupied;
     private boolean isDirty;
 
     //Constructor
     public Room(int numbersOfBeds, double price, boolean isOccupied, boolean isDirty) {
-        this.numbersOfBeds = numbersOfBeds;
+        this.numberOfBeds = numbersOfBeds;
         this.price = price;
         this.isOccupied = isOccupied;
         this.isDirty = isDirty;
@@ -17,12 +17,12 @@ public class Room {
 
     //Setters/Getters
 
-    public int getNumbersOfBeds() {
-        return numbersOfBeds;
+    public int getNumberOfBeds() {
+        return numberOfBeds;
     }
 
-    public void setNumbersOfBeds(int numbersOfBeds) {
-        this.numbersOfBeds = numbersOfBeds;
+    public void setNumberOfBeds(int numbersOfBeds) {
+        this.numberOfBeds = numberOfBeds;
     }
 
     public double getPrice() {

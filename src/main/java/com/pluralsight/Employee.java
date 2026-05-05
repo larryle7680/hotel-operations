@@ -15,29 +15,6 @@ private double hoursWorked;
         this.employeeId = employeeId;
     }
 
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
 
     public double getPayRate() {
         return payRate;
@@ -56,27 +33,25 @@ private double hoursWorked;
     }
     double wage = 0;
     public double getRegularHours(){
-        if (hoursWorked <= 40){
-             return getRegularHours();
+        if (this.hoursWorked <= 40){
+             return this.hoursWorked;
         }else{
             return 40;
         }
 
     }
-    double overtimeHours;
+
     public double getOvertimeHours(){
-        if(getHoursWorked() > 40){
-            overtimeHours = hoursWorked - 40;
+        if(this.hoursWorked > 40){
+            return this.hoursWorked - 40;
         }
-        return overtimeHours;
+        return 0;
     }
 
     public double getTotalPay(){
-        if(getHoursWorked() < 40){
-            wage = getPayRate() * getHoursWorked();
-        }else if (getHoursWorked() > 40){
-            wage = overtimeHours * 1.5;
-        }
-        return wage;
+       double regularPay = this.payRate * this.getRegularHours();
+       double overTimePay = this.payRate * this.getOvertimeHours() * 1.5;
+
+       return regularPay + overTimePay;
     }
 }
