@@ -50,9 +50,9 @@ public class Room {
     }
 
     public boolean isAvailable(){
-        if(isOccupied() == false && isDirty() == false){
-            System.out.println("This room is available");
+        if(this.isOccupied() && this.isDirty() ){
+            return false;
         }
-        return isAvailable();
+        return true;
     }
 }
