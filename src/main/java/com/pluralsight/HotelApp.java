@@ -80,6 +80,38 @@ public class HotelApp {
 
         System.out.println();
 
+        Employee employee1 = new Employee(35, 25, "Receptionist", "Larry Le", 12323432);
+
+        System.out.println("Employee 1 Get hours worked: " + employee1.getTotalPay());
+        employee1.punchIn(1);
+        employee1.punchOut();
+        System.out.println("Employee 1 Get hours worked: " + employee1.getTotalPay());
+
+        //Creating the hotel Objects
+        Hotel hotel = new Hotel("Larry Tipton", 4, 20);
+        Hotel hotel2 = new Hotel("TK Hotel", 10, 20,6,10);
+
+        //Testing the object
+        System.out.println("Hotel Name: " + hotel.getName());
+        System.out.println("Number of Suites: " + hotel.getNumbersOfSuites());
+        System.out.println("Number of Rooms: " + hotel.getNumberOfRooms());
+        System.out.println();
+
+        //Testing the Object
+        System.out.println("Hotel Name: " + hotel2.getName());
+        System.out.println("Number of Suites: " + hotel2.getNumbersOfSuites());
+        System.out.println("Number of Rooms: " + hotel2.getNumberOfRooms());
+        System.out.println("Booked Suites: " + hotel2.getBookedSuites());
+        System.out.println("Booked Rooms: " + hotel2.getBookedBasicRooms());
+        System.out.println();
+
+        //Testing out book room
+        hotel.bookRoom(2,false);
+
+
+
+
+
     }
 
 }

@@ -55,4 +55,20 @@ public class Room {
         }
         return true;
     }
+
+    public void checkIn(){
+        this.isOccupied = true;
+        this.isDirty = true;
+        System.out.println("Someone is checked-in");
+    }
+
+    public void checkout(){
+        this.isOccupied = false;
+        cleanroom();
+    }
+
+    public void cleanroom(){
+        this.isDirty = false;
+
+    }
 }
