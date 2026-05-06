@@ -26,7 +26,7 @@ class RoomTest {
         room.checkOut();
         //Act
 
-        //assert
+        //assert yolo
         assertFalse(room.isOccupied());
         assertFalse(room.isDirty());
 
