@@ -62,7 +62,7 @@ public class Room {
         System.out.println("Someone is checked-in");
     }
 
-    public void checkout(){
+    public void checkOut(){
         this.isOccupied = false;
         cleanroom();
     }
