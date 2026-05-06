@@ -89,7 +89,7 @@ public class HotelApp {
 
         //Creating the hotel Objects
         Hotel hotel = new Hotel("Larry Tipton", 4, 20);
-        Hotel hotel2 = new Hotel("TK Hotel", 10, 20,6,10);
+        Hotel hotel2 = new Hotel("TK Hotel", 10, 20,3,3);
 
         //Testing the object
         System.out.println("Hotel Name: " + hotel.getName());
@@ -106,7 +106,25 @@ public class HotelApp {
         System.out.println();
 
         //Testing out book room
-        hotel.bookRoom(2,false);
+        hotel2.bookRoom(2,false);
+
+        System.out.println();
+        //Hotel got 20 rooms, so it should be 18
+        System.out.println("Hotel Name: " + hotel.getName());
+        System.out.println("Number of Rooms: " + hotel.getNumberOfRooms());
+        System.out.println("Number of Suites: " + hotel.getNumbersOfSuites());
+
+        System.out.println( hotel2.getAvailableSuites());
+
+        //Testing out book room
+        hotel2.bookRoom(2,true);
+
+        //Hotel got 20 rooms, so it should be 18
+        System.out.println("Hotel Name: " + hotel2.getName());
+        System.out.println("Number of Rooms: " + hotel2.getNumberOfRooms());
+        System.out.println("Number of Suites: " + hotel2.getNumbersOfSuites());
+
+        System.out.println( hotel2.getAvailableSuites());
 
 
 
