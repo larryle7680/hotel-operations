@@ -64,10 +64,10 @@ public class Room {
 
     public void checkOut(){
         this.isOccupied = false;
-        cleanroom();
+        cleanRoom();
     }
 
-    public void cleanroom(){
+    public void cleanRoom(){
         this.isDirty = false;
 
     }

@@ -31,4 +31,18 @@ class RoomTest {
         assertFalse(room.isDirty());
 
     }
+
+    @Test
+    public void cleanRoom_should_pushIsDirtyFalse(){
+        //Arrange
+        Room room = new Room (2, 139, true, true);
+        room.cleanRoom();
+        //Act
+
+        //assert yolo
+        assertFalse(room.isDirty());
+
+
+    }
+
 }
